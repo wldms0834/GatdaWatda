@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mainColor"
+    android:orientation="vertical">
+
+    <ExpandableListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".7"
+        android:elevation="0dp">
+
+    </ExpandableListView>
+
+    <LinearLayout
+        android:id="@+id/bt_like_2_plan"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounding_corner"
+        android:fontFamily="@font/rixgom"
+        android:orientation="horizontal"
+        android:text="내 코스 제작"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_weight=".7"
+            android:gravity="right|center_horizontal"
+            android:text="내 코스 만들기"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="65dp"
+            android:layout_weight=".3"
+            app:srcCompat="@drawable/magic" />
+    </LinearLayout>
+
+</LinearLayout>

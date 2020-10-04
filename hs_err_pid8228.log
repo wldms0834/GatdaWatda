@@ -1,0 +1,158 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 1048576 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (memory/allocation.inline.hpp:61), pid=8228, tid=0x0000000000004154
+#
+# JRE version:  (8.0_152-b06) (build )
+# Java VM: OpenJDK 64-Bit Server VM (25.152-b06 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000003162800):  JavaThread "Unknown thread" [_thread_in_vm, id=16724, stack(0x0000000002cc0000,0x0000000002dc0000)]
+
+Stack: [0x0000000002cc0000,0x0000000002dc0000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0000000003162800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=16724, stack(0x0000000002cc0000,0x0000000002dc0000)]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap:
+ PSYoungGen      total 38400K, used 665K [0x00000000e0000000, 0x00000000e2a80000, 0x0000000100000000)
+  eden space 33280K, 2% used [0x00000000e0000000,0x00000000e00a6670,0x00000000e2080000)
+  from space 5120K, 0% used [0x00000000e2580000,0x00000000e2580000,0x00000000e2a80000)
+  to   space 5120K, 0% used [0x00000000e2080000,0x00000000e2080000,0x00000000e2580000)
+ ParOldGen       total 87552K, used 0K [0x00000000a0000000, 0x00000000a5580000, 0x00000000e0000000)
+  object space 87552K, 0% used [0x00000000a0000000,0x00000000a0000000,0x00000000a5580000)
+ Metaspace       used 772K, capacity 4480K, committed 4480K, reserved 1056768K
+  class space    used 73K, capacity 384K, committed 384K, reserved 1048576K
+
+Card table byte_map: [0x0000000012620000,0x0000000012930000] byte_map_base: 0x0000000012120000
+
+Marking Bits: (ParMarkBitMap*) 0x0000000057945aa0
+ Begin Bits: [0x0000000012f30000, 0x0000000014730000)
+ End Bits:   [0x0000000014730000, 0x0000000015f30000)
+
+Polling page: 0x00000000010e0000
+
+CodeCache: size=245760Kb used=328Kb max_used=328Kb free=245431Kb
+ bounds [0x0000000003260000, 0x00000000034d0000, 0x0000000012260000]
+ total_blobs=57 nmethods=0 adapters=38
+ compilation: enabled
+
+Compilation events (0 events):
+No events
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.043 loading class java/lang/Short
+Event: 0.043 loading class java/lang/Short done
+Event: 0.043 loading class java/lang/Integer
+Event: 0.043 loading class java/lang/Integer done
+Event: 0.043 loading class java/lang/Long
+Event: 0.043 loading class java/lang/Long done
+Event: 0.044 loading class java/lang/NullPointerException
+Event: 0.044 loading class java/lang/NullPointerException done
+Event: 0.044 loading class java/lang/ArithmeticException
+Event: 0.044 loading class java/lang/ArithmeticException done
+
+
+Dynamic libraries:
+0x00007ff78ced0000 - 0x00007ff78cf01000 	C:\Program Files\Android\Android Studio\jre\jre\bin\java.exe
+0x00007ff963550000 - 0x00007ff96373d000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ff963250000 - 0x00007ff963303000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ff9602d0000 - 0x00007ff960563000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ff961ff0000 - 0x00007ff962093000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ff961e90000 - 0x00007ff961f2e000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ff963080000 - 0x00007ff96311e000 	C:\WINDOWS\System32\sechost.dll
+0x00007ff963120000 - 0x00007ff963242000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ff962db0000 - 0x00007ff962f47000 	C:\WINDOWS\System32\USER32.dll
+0x00007ff95faa0000 - 0x00007ff95fac0000 	C:\WINDOWS\System32\win32u.dll
+0x00007ff962f60000 - 0x00007ff962f89000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ff95f6d0000 - 0x00007ff95f86a000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ff95fac0000 - 0x00007ff95fb60000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ff9605d0000 - 0x00007ff9606ca000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ff951130000 - 0x00007ff9513a9000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.17763.437_none_05b63dca071e5dd6\COMCTL32.dll
+0x00007ff962840000 - 0x00007ff962b6c000 	C:\WINDOWS\System32\combase.dll
+0x00007ff9606d0000 - 0x00007ff96074e000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ff962300000 - 0x00007ff96232e000 	C:\WINDOWS\System32\IMM32.DLL
+0x0000000056fc0000 - 0x0000000057092000 	C:\Program Files\Android\Android Studio\jre\jre\bin\msvcr100.dll
+0x0000000057180000 - 0x00000000579c1000 	C:\Program Files\Android\Android Studio\jre\jre\bin\server\jvm.dll
+0x00007ff962f50000 - 0x00007ff962f58000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ff958640000 - 0x00007ff95864a000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ff951f10000 - 0x00007ff951f34000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ff951d60000 - 0x00007ff951d69000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ff962350000 - 0x00007ff9623bd000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ff951ee0000 - 0x00007ff951f0d000 	C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+0x00007ff95fa50000 - 0x00007ff95fa9a000 	C:\WINDOWS\System32\cfgmgr32.dll
+0x00007ff95b7b0000 - 0x00007ff95b7bf000 	C:\Program Files\Android\Android Studio\jre\jre\bin\verify.dll
+0x00007ff957aa0000 - 0x00007ff957ac9000 	C:\Program Files\Android\Android Studio\jre\jre\bin\java.dll
+0x00007ff95a360000 - 0x00007ff95a376000 	C:\Program Files\Android\Android Studio\jre\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Djava.awt.headless=true -Djava.rmi.server.hostname=127.0.0.1 -Xmx1536m -Dkotlin.environment.keepalive 
+java_command: org.jetbrains.kotlin.daemon.KotlinCompileDaemon --daemon-runFilesPath C:\Users\apple\AppData\Local\kotlin\daemon --daemon-autoshutdownIdleSeconds=7200 --daemon-compilerClasspath C:\Users\apple\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-compiler-embeddable\1.2.71\a79f934bfbc1c7e16638da3474feab351735f1c0\kotlin-compiler-embeddable-1.2.71.jar;C:\Users\apple\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-reflect\1.2.71\7512db3b3182753bd2e48ce8d345abbadc40fe6b\kotlin-reflect-1.2.71.jar;C:\Users\apple\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib\1.2.71\d9717625bb3c731561251f8dd2c67a1011d6764c\kotlin-stdlib-1.2.71.jar;C:\Users\apple\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-script-runtime\1.2.71\d5439926359caa899f41e1915b19d6d23e49750b\kotlin-script-runtime-1.2.71.jar;C:\Users\apple\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib-common\1.2.71\ba18ca1aa0e40eb6f1865b324af2f4cbb691c1ec\kotlin-stdlib-common-1.2.71.jar;C:\Users\apple\.gradle\caches\modules-2\files-2.1\org.jetbrains\annotations\13.0\919f0dfe192fb4e063e7dacadee7f8bb9a2672a9\annotations-13.0.jar;C:\Program Files\Android\Android Studio\jre\lib\tools.jar
+java_class_path (initial): C:\Users\apple\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-compiler-embeddable\1.2.71\a79f934bfbc1c7e16638da3474feab351735f1c0\kotlin-compiler-embeddable-1.2.71.jar;C:\Users\apple\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-reflect\1.2.71\7512db3b3182753bd2e48ce8d345abbadc40fe6b\kotlin-reflect-1.2.71.jar;C:\Users\apple\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib\1.2.71\d9717625bb3c731561251f8dd2c67a1011d6764c\kotlin-stdlib-1.2.71.jar;C:\Users\apple\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-script-runtime\1.2.71\d5439926359caa899f41e1915b19d6d23e49750b\kotlin-script-runtime-1.2.71.jar;C:\Users\apple\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib-common\1.2.71\ba18ca1aa0e40eb6f1865b324af2f4cbb691c1ec\kotlin-stdlib-common-1.2.71.jar;C:\Users\apple\.gradle\caches\modules-2\files-2.1\org.jetbrains\annotations\13.0\919f0dfe192fb4e063e7dacadee7f8bb9a2672a9\annotations-13.0.jar;C:\Program Files\Android\Android Studio\jre\lib\tools.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk-11.0.2
+CLASSPATH=C:\Program Files\Java\jdk-11.0.2\lib
+PATH=C:\Program Files\Java\jdk-11.0.2\bin;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\app\apple\product\11.2.0\dbhome_1\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-11.0.2\bin;C:\Program Files\Git\cmd;C:\Apache24\bin;C:\Users\apple\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\apple\AppData\Local\Programs\Python\Python37-32\;C:\Users\apple\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\
+USERNAME=apple
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 69 Stepping 1, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 17763 (10.0.17763.437)
+
+CPU:total 4 (initial active 4) (2 cores per cpu, 2 threads per core) family 6 model 69 stepping 1, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2
+
+Memory: 4k page, physical 8294660k(2622748k free), swap 18133152k(5136k free)
+
+vm_info: OpenJDK 64-Bit Server VM (25.152-b06) for windows-amd64 JRE (1.8.0_152-release-1136-b06), built by "builder" with MS VC++ 10.0 (VS2010)
+
+time: Sun Apr 21 17:24:06 2019
+elapsed time: 0 seconds (0d 0h 0m 0s)
+

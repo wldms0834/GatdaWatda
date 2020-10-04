@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:orientation="vertical">
+
+
+  <ImageView
+      android:id="@+id/ivSpotPic"
+      android:layout_width="match_parent"
+      android:layout_height="300dp"
+      android:layout_marginBottom="10dp"
+      android:layout_weight=".7"
+      tools:srcCompat="@tools:sample/backgrounds/scenic[15]" />
+
+  <TextView
+      android:id="@+id/tvComment"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight=".3"
+      android:fontFamily="@font/rixgom"
+      android:hint="comment here!"
+      android:inputType="textMultiLine"
+      android:textSize="8sp" />
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="1.0">
+
+
+    <!-- 깔끔하게 보여주기 위해 scaleType과 marginTop 속성을 줍니다. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".7">
+
+        <ImageView
+            android:id="@+id/ivmainPic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+
+            android:background="@color/colorPrimary"
+            android:scaleType="centerCrop" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9" />
+
+        <LinearLayout
+            android:id="@+id/ivGradation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@drawable/viewpager_border"
+            app:srcCompat="@drawable/viewpager_border"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="14dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="20dp">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ic_favorite_white_full_24dp"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/tvCourseLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="갯수"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvPostName"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="0.13"
+        android:fontFamily="@font/rixgoeb"
+        android:paddingTop="10dp"
+        android:text="게시물 제목"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvGuiderName"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="0.07"
+        android:text="가이드이름"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tvPostDescription"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="0.15"
+        android:paddingTop="10dp"
+        android:text="게시물 내용"
+        android:textSize="12sp" />
+
+</LinearLayout>

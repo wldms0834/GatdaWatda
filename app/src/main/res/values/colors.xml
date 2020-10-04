@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#27a790</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorLightGray">#a0f1f1f1</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorDivision">#e0e0e0</color>
+    <color name="colorNavIcon">#8e8888</color>
+    <color name="pointColor">#FD845F</color>
+
+    <color name="colorGoogleSignIn">#d34836</color>
+    <color name="colorGoogleSignInPressed">#b02513</color>
+    <color name="colorEmailSignIn">#009688</color>
+    <color name="colorEmailSignInPressed">#004D40</color>
+    <color name="mainColor">#fafafa</color>>
+    <color name="mainColor_alpha">#80fafafa</color>
+    <color name="post">#828e8888</color>
+
+</resources>
